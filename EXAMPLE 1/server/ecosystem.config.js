@@ -18,7 +18,7 @@ module.exports = {
       AWS_COGNITO_USER_POOL_ID: 'us-east-1_8KoRuqoih',
       AWS_COGNITO_CLIENT_ID: '2rvu08r9ci4fob4l43silnr564',
       AWS_COGNITO_SECRET: 'hnko4phaa10tvqcsmoa8ldpi2frr1h7em5q19pqctsh82oqgoi8',
-      AWS_COGNITO_DOMAIN_NAME: 'https://tst-srvx-bot.auth.us-east-1.amazoncognito.com/',
+      AWS_COGNITO_DOMAIN_NAME: 'https://spike-tst-bot.auth.us-east-1.amazoncognito.com/',
       AWS_COGNITO_JWKS: 'https://cognito-idp.us-east-1.amazonaws.com/'
     },
   }]
