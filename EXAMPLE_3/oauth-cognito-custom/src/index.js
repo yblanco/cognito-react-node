@@ -1,6 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { SignIn, Authenticator } from "aws-amplify-react";
+import {
+  Greetings,
+  SignIn,
+  RequireNewPassword,
+  ForgotPassword,
+  Loading,
+  Authenticator
+} from "aws-amplify-react";
 
 import Authorization from './components/Authorization';
 import { validateConfig } from './libs/validator.lib';
@@ -9,7 +16,13 @@ const Auth = ({ config, children }) => (
   validateConfig(config) &&
   <Authenticator
     amplifyConfig={config}
+    hideDefault={true}
   >
+    <Greetings />
+    <SignIn />
+    <RequireNewPassword />
+    <ForgotPassword />
+    <Loading />
     <Authorization>
       {children}
     </Authorization>
