@@ -46,12 +46,12 @@ export class CustomSignIn extends SignIn {
             />
             <p className="text-grey-dark text-xs">
               Forgot your password?{" "}
-              <a
+              <span
                 className="text-indigo cursor-pointer hover:text-indigo-darker"
                 onClick={() => super.changeState("forgotPassword")}
               >
                 Reset Password
-              </a>
+              </span>
             </p>
           </div>
           <div className="flex items-center justify-between">
@@ -64,12 +64,12 @@ export class CustomSignIn extends SignIn {
             </button>
             <p className="text-grey-dark text-xs">
               No Account?{" "}
-              <a
+              <span
                 className="text-indigo cursor-pointer hover:text-indigo-darker"
                 onClick={() => super.changeState("signUp")}
               >
                 Create account
-              </a>
+              </span>
             </p>
           </div>
         </form>
