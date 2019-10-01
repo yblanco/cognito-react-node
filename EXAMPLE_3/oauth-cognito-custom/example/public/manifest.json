@@ -1,7 +1,7 @@
 {
   "short_name": "oauth-cognito-custom",
   "name": "oauth-cognito-custom",
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

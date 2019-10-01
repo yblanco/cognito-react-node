@@ -5,7 +5,7 @@ const Authorization = ({ authState, children }) => {
   if(authState === "signedIn"){
     show = children;
   }
-  return children;
+  return show;
 }
 
 Authorization.propTypes = {

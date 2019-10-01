@@ -27,5 +27,7 @@ class Example extends Component {
 ```
 
 ## License
+MIT ©
 
-MIT © [Yeinso Blanco](https://github.com/Yeinso Blanco)
+### More info
+https://aws-amplify.github.io/docs/js/authentication#using-components-in-react

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { SignIn } from "aws-amplify-react";
-import { Authenticator } from "aws-amplify-react/dist/Auth";
+import { SignIn, Authenticator } from "aws-amplify-react";
 
 import Authorization from './components/Authorization';
 import { validateConfig } from './libs/validator.lib';
