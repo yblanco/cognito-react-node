@@ -1,7 +1,31 @@
-import React from 'react';
+import React from "react";
+import { SignIn } from "aws-amplify-react";
+import config from "./aws-exports";
+import { CustomSignIn } from "./components/CustomSignIn";
+import AppWithAuth from "./AppWithAuth";
+import { Authenticator } from "aws-amplify-react/dist/Auth";
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <Authenticator hide={[SignIn]} amplifyConfig={config}>
+          <CustomSignIn />
+          <AppWithAuth />
+        </Authenticator>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+/*import React from 'react';
 import Amplify from "aws-amplify";
 import { withAuthenticator } from "aws-amplify-react";
 import config from "./aws-exports";
+
 
 Amplify.configure(config);
 
@@ -9,11 +33,10 @@ Amplify.configure(config);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Esta es una página
-      </header>
+      Esto es una página
     </div>
   );
 }
 
 export default withAuthenticator(App, true);
+*/
