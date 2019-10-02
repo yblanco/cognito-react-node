@@ -12,7 +12,7 @@ import {
 import Authorization from './components/Authorization';
 import { validateConfig } from './libs/validator.lib';
 
-const Auth = ({ config, children }) => (
+const AuthWrapper = ({ config, children }) => (
   validateConfig(config) &&
   <Authenticator
     amplifyConfig={config}
@@ -27,9 +27,9 @@ const Auth = ({ config, children }) => (
       {children}
     </Authorization>
   </Authenticator>
-)
+);
 
-Auth.propTypes = {
+AuthWrapper.propTypes = {
   config: PropTypes.shape({
     aws_project_region: PropTypes.string,
     aws_cognito_region: PropTypes.string.isRequired,
@@ -44,4 +44,4 @@ Auth.propTypes = {
   ]),
 }
 
-export default Auth;
+export default AuthWrapper;
