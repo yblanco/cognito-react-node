@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Auth } from 'aws-amplify'
 import AuthWrapper from 'oauth-cognito-custom'
-import config from './config.json';
+import config from './config';
 
 const App = () => {
 

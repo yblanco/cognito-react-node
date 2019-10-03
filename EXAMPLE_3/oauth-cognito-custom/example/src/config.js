@@ -1,4 +1,4 @@
-{
+export default {
   "aws_cognito_region": "us-east-1",
   "aws_user_pools_id": "us-east-1_8KoRuqoih",
   "aws_user_pools_web_client_id": "6mta4gpk3vm7rluq84rr6ji2il",
