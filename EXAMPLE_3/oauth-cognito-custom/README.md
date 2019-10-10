@@ -33,3 +33,5 @@ MIT ©
 https://aws-amplify.github.io/docs/js/authentication#using-components-in-react
 
 https://dev.to/dabit3/the-complete-guide-to-user-authentication-with-the-amplify-framework-2inh
+
+https://github.com/aws-amplify/amplify-js/issues/825#issuecomment-448951805
